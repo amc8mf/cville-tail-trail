@@ -1,0 +1,28 @@
+.hero {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.glow{
+      font-family: Sans-serif;
+      font-size: 3rem;
+      background: #FFA500;
+      color: white;
+      padding: 80px;
+      text-shadow:
+                  1px 1px 0px gold,
+                  -3px -0 25px red,
+                  3px 0px 3px white,
+                  0px 0px 15px white,
+                  15px 10px 10px black,
+                  0 0 40px orangered,
+                  0 0 40px orangered,
+                  0 0 60px orangered,
+                  0 0 80px orangered,
+                  0 0 80px orangered,
+                  0 0 100px orangered,
+                  0 0 150px orangered;
+       }
