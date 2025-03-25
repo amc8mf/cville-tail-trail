@@ -1,0 +1,20 @@
+<div class="center">
+	<h3 class="header center">Find dog-friendly eateries, parks, trails, and breweries in the greater Charlottesville area.</h3>
+	<form class="search">
+		<mat-form-field>
+			<mat-label>Search Here...</mat-label>
+			<input 
+				type="text"
+				placeholder="Pick one"
+				aria-label=" Park, Trail, Restaurant, or Brewery"
+				matInput
+				[formControl]="myControl"
+				[matAutocomplete]="auto">
+			<mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+			@for (option of filteredOptions | async; track option) {
+				<mat-option [value]="option">{{option}}</mat-option>
+			}
+			</mat-autocomplete>
+		</mat-form-field>
+	</form>
+</div>
